@@ -1,0 +1,46 @@
+#books {
+  .books {
+    &__title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 112px 0 64px 0;
+      h1{
+        font-size: 48px;
+        
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+    &__img {
+      display: flex;
+      gap: 40px;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &-block {
+        // display: flex;
+        // flex-direction: column;
+
+        img {
+          width: 200px;
+          height: 300px;
+        }
+        p {
+          color: #19272e;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 8px 0;
+        }
+        span {
+          color: #19272e;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
