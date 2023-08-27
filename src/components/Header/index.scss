@@ -1,6 +1,6 @@
 #header {
   background: var(--background-color, #fff);
-  box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2); 
+  box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2);
   margin-bottom: 30px;
   .container {
     .header {
@@ -21,6 +21,9 @@
             color: blue;
           }
         }
+        .active {
+          color: blue;
+        }
       }
       &--icons {
         font-size: 34px;
@@ -29,18 +32,16 @@
         align-items: center;
         justify-content: space-between;
         font-size: 20px;
-       
       }
     }
   }
 }
 @media (max-width: 700px) {
-  #header{
-    .header{
-      &--nav{
-        a{
+  #header {
+    .header {
+      &--nav {
+        a {
           display: none;
-
         }
       }
     }
