@@ -6,6 +6,7 @@ import HomePage from "./components/HomePage";
 import About from "./components/HomePage/About";
 import FilterBook from "./page/FilterBook";
 import NewBooks from "./components/HomePage/NewBooks";
+import List from "./components/List";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/aboutus" element={<About />} />
-          <Route path="/books" element={<FilterBook />} />
+          <Route path="/books" element={<List />} />
           <Route path="/newbooks" element={<NewBooks />} />
         </Routes>
       </div>
