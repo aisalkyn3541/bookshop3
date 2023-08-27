@@ -23,7 +23,7 @@ const BasketCard = ({ el }) => {
           <div className="cart__block-title">
             <div className="cart__block-title-hear">
               <h1>{el.volumeInfo?.title}</h1>
-              <div style={{ display: "flex", gap: "15px" }}>
+              <div>
                 <h3 onClick={() => dispath(removeCard(el))}>Remove</h3>
               </div>
             </div>
@@ -36,14 +36,13 @@ const BasketCard = ({ el }) => {
               </button>
             </Link>
             <h4>Quantity:{el.quantity}</h4>
-            <h2>${el.quantity * el.counter}</h2>
+            <h2>${el.counter * el.quantity}</h2>
           </div>
         </div>
       </div>
       <hr
         style={{
           margin: "20px 0",
-          width: "44%",
         }}
       />
     </>
