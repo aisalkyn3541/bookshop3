@@ -2,6 +2,8 @@
   background: var(--background-color, #fff);
   box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2);
   margin-bottom: 30px;
+  position: sticky;
+  top: 0;
   .container {
     .header {
       display: flex;
