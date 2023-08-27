@@ -24,7 +24,7 @@ const Header = () => {
             <BiSearchAlt2 />
             <div>
               <Link to={"/basket"}>
-                <AiOutlineShopping />
+                <AiOutlineShopping className="basket"/>
               </Link>
               <sup>{basket.length}</sup>
             </div>
