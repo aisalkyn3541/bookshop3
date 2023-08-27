@@ -1,0 +1,26 @@
+#hero {
+  background-image: url("../../../img/Mainimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .hero {
+    h1 {
+      margin: 0 auto;
+      color: white;
+      max-width: 598px;
+      height: 66px;
+      gap: 16px;
+      font-size: 45px;
+    }
+    p {
+      color: black;
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
