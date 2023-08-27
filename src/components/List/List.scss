@@ -1,0 +1,127 @@
+#List {
+  display: flex;
+  overflow: hidden;
+  .list {
+    &--allbook {
+      margin: 48px 0 0 148px;
+      gap: 8px;
+      h2 {
+        color: var(--text-color, #19272e);
+        font-family: Public Sans;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px; /* 133.333% */
+        letter-spacing: -1.08px;
+      }
+      p {
+        color: var(--text-color, #19272e);
+
+        /* Paragraph 01 */
+        font-family: Public Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 140% */
+        letter-spacing: -0.4px;
+      }
+    }
+    &--filter {
+      gap: 32px;
+      display: flex;
+
+      &--inp {
+        &--h5 {
+          color: var(--text-color, #19272e);
+          font-family: Public Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px; /* 125% */
+          letter-spacing: -0.4px;
+        }
+        input {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          margin: 8px 0;
+          width: 181px;
+        }
+        margin-left: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        color: var(--text-color, #19272e);
+        font-family: Public Sans;
+        margin-bottom: 24px;
+      }
+
+      &--block {
+        margin-bottom: 64px;
+        &--title {
+          margin-top: 10px;
+        }
+        &--text {
+          margin-bottom: 24px;
+          color: var(--text-color, #19272e);
+
+          /* Heading 04 */
+          font-family: Public Sans;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30px; /* 136.364% */
+          letter-spacing: -0.55px;
+        }
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        margin-left: 141px;
+        width: 1570px;
+        &--sort {
+          display: flex;
+          &--btn {
+            width: 160px;
+            height: 37px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            border: 1px solid var(--main-color, #818eea);
+            color: var(--main-color, #818eea);
+            font-family: Inter;
+            background-color: white;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px; /* 185.714% */
+            letter-spacing: -0.3px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+#kniga {
+  .kniga {
+    &--book {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1460px;
+      margin-left: 100px;
+      &--df {
+        margin: 0 20px;
+        width: 280px;
+        img {
+          margin-top: 50px;
+          width: 280px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
