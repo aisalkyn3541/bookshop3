@@ -1,9 +1,8 @@
-import React from 'react'
-import './index.scss'
-import hero from '../../../img/Mainimage.png'
+import React from "react";
+import "./index.scss";
+import hero from "../../../img/Mainimage.png";
 
-
-const index = () => {
+const Hero = () => {
   return (
     <div id="hero">
       <div className="container">
@@ -14,6 +13,6 @@ const index = () => {
       </div>
     </div>
   );
-}
+};
 
-export default index
+export default Hero;
