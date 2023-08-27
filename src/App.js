@@ -1,20 +1,4 @@
 import "./App.scss";
-import Allbook from "./components/Allbook/Allbook";
-import Choice from "./components/Choice/Choice";
-import List from "./components/List";
-
-import './App.scss';
-import End from './components/End/basked';
-
-function App() {
-  return (
-    <div className="App">
-      <Choice />
-      <Allbook />
-      <List />
-      <End/>
-    </div>
-import "./App.scss";
 import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
 import { Route, Routes } from "react-router-dom";
