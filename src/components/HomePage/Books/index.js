@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import './index.scss'
+import "./index.scss";
 const Books = () => {
   const [book, setBook] = useState([]);
   const getBooks = () => {
@@ -18,7 +18,7 @@ const Books = () => {
         <div className="books">
           <div className="books__title">
             <h1>Books</h1>
-            <Link>View all</Link>
+            <Link to={"/books"}>View all</Link>
           </div>
           <div className="books__img">
             {book.map((el) => (

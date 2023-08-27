@@ -10,11 +10,13 @@ const Header = () => {
       <div className="container">
         <div className="header">
           <div className="header--nav">
-            <img src={logo} alt="" />
-            <NavLink>Categories</NavLink>
-            <NavLink>Recent</NavLink>
-            <NavLink>Books</NavLink>
-            <NavLink>About Us</NavLink>
+            <NavLink to={"/"}>
+              <img src={logo} alt="" />
+            </NavLink>
+            <NavLink to={"/categories"}>Categories</NavLink>
+            <NavLink to={"/newbooks"}>Recent</NavLink>
+            <NavLink to={"/books"}>Books</NavLink>
+            <NavLink to={"/aboutus"}>About Us</NavLink>
           </div>
           <div className="header--icons">
             <BiSearchAlt2 />

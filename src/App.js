@@ -17,28 +17,26 @@ function App() {
 import "./App.scss";
 import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
-import Hero from "./components/HomePage/Hero";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HeroTwo from "./components/HomePage/HeroTwo";
-import HeroT from "./components/HomePage/HeroT";
-import Books from "./components/HomePage/Books";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./components/HomePage";
 import About from "./components/HomePage/About";
+import FilterBook from "./page/FilterBook";
+import NewBooks from "./components/HomePage/NewBooks";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Header />
+    <div className="App">
+      <Header />
+      <div className="content">
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/aboutus" element={<About />} />
+          <Route path="/books" element={<FilterBook />} />
+          <Route path="/newbooks" element={<NewBooks />} />
         </Routes>
-        <HeroTwo/>
-        <HeroT/>
-        <Books/>
-        <About/>
-        <Footer />
       </div>
-    </BrowserRouter>
+      <Footer />
+    </div>
   );
 }
 
