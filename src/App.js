@@ -7,6 +7,9 @@ import About from "./components/HomePage/About";
 import FilterBook from "./page/FilterBook";
 import NewBooks from "./components/HomePage/NewBooks";
 import List from "./components/List";
+import End from "./components/End/basked";
+import BookDetails from "./page/DetailPage";
+import Basket from "./components/Basket";
 
 function App() {
   return (
@@ -18,6 +21,8 @@ function App() {
           <Route path="/aboutus" element={<About />} />
           <Route path="/books" element={<List />} />
           <Route path="/newbooks" element={<NewBooks />} />
+          <Route path="/book/details/:bookId" element={<BookDetails />} />
+          <Route path="/basket" element={<Basket />} />
         </Routes>
       </div>
       <Footer />

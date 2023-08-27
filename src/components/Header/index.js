@@ -3,8 +3,10 @@ import "./index.scss";
 import logo from "../../img/Logo.png";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { AiOutlineShopping } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Header = () => {
+  const { basket } = useSelector((r) => r);
   return (
     <div id="header">
       <div className="container">
@@ -21,8 +23,10 @@ const Header = () => {
           <div className="header--icons">
             <BiSearchAlt2 />
             <div>
-              <AiOutlineShopping />
-              <sup>0</sup>
+              <Link to={"/basket"}>
+                <AiOutlineShopping />
+              </Link>
+              <sup>{basket.length}</sup>
             </div>
           </div>
         </div>
