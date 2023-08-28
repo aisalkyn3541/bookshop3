@@ -39,7 +39,6 @@
       }
     }
     &__block {
-      // max-width: 400px;
       &-title {
         &-hear {
           display: flex;
@@ -60,19 +59,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: 20px;
-            letter-spacing: -0.4px;
-            position: relative;
             bottom: 0;
             top: 0;
             cursor: pointer;
-            &::before {
-              content: "";
-              position: absolute;
-              top: 40%;
-              width: 100%;
-              background: #f00;
-              height: 2px;
-            }
+            border-bottom: 1px solid red;
           }
         }
         .btn {
