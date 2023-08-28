@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import logo from "../../img/Logo.png";
-import { BiSearchAlt2 } from "react-icons/bi";
+import { CiSearch } from "react-icons/ci";
 import { AiOutlineShopping } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -21,13 +21,14 @@ const Header = () => {
             <NavLink to={"/aboutus"}>About Us</NavLink>
           </div>
           <div className="header--icons">
-            <BiSearchAlt2 />
-            <div>
-              <Link to={"/basket"}>
-                <AiOutlineShopping className="basket"/>
-              </Link>
-              <sup>{basket.length}</sup>
-            </div>
+            <CiSearch style={{fontSize: '20px', marginRight: '10px'}}/>
+            <Link to={"/basket"}>
+              <AiOutlineShopping style={{
+                fontSize: '20px',
+                color: '#000'
+              }} />
+            </Link>
+            <sup>{basket.length}</sup>
           </div>
         </div>
       </div>
