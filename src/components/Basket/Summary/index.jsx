@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./index.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { MdExpandLess } from "react-icons/md";
+import Logo from "../../../img/PayPal1.png";
 
 const Summary = () => {
   const { basket } = useSelector((s) => s);
@@ -78,7 +79,43 @@ const Summary = () => {
             display: select2 ? "block" : "none",
           }}
         >
-          fdsa
+            <div className="summary__payment--carta">
+                <div className="summary__payment--carta__cartaButton">
+                    <div className="summary__payment--carta__cartaButton--payPal">
+                        <button><img src={Logo} alt="payPal"/></button>
+                    </div>
+
+                    <div className="summary__payment--carta__cartaButton--payPal2">
+                        <button><p>Credit Card</p></button>
+                    </div>
+                </div>
+                <div className="summary__payment--carta__email">
+                  <div  className="summary__payment--carta__email--name">
+                    <input type="text" placeholder="Cardholder Name" />
+
+                  </div>
+
+                  <div  className="summary__payment--carta__email--name">
+                    <input type="text" placeholder="Card Number" />
+          
+                  </div>
+
+                  <div  className="summary__payment--carta__email--name2">
+                    <input type="text" placeholder="Month" />
+                    <input type="text" placeholder="Year" />
+                  </div>
+
+                  <div  className="summary__payment--carta__email--name">
+                    <input type="text" placeholder="CVC" />
+          
+                  </div>
+
+                </div>
+          
+
+
+
+            </div>
         </div>
         <hr />
         <div className="summary__total">
