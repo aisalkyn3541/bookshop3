@@ -106,6 +106,77 @@
       line-height: 22px; /* 137.5% */
       letter-spacing: -0.4px;
       cursor: pointer;
+    
     }
+  &__payment{
+    &--carta{
+
+      &__cartaButton{
+        display: flex;
+        justify-content: space-evenly;
+          gap: 10px;
+        &--payPal{
+          button{
+            width: 153px;
+            height: 33px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #818eea;
+            background: #ffffff;
+          }
+          img{
+            margin: -7px 5px 6px 0px;
+          }
+          button :hover{
+            background: #818eea;
+          }
+        }
+
+        &--payPal2{
+          button{
+            width: 153px;
+            height: 33px;
+            border-radius: 8px;
+            border: 1px solid #ffffff;
+            background: #818eea;
+            padding: -7px 5px 6px 0px;
+          }
+          p{
+            font-size: 14px;
+            color: #fff;
+            margin: -18px 8px 6px 0px;
+          }
+        }
+      }
+      &__email{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        &--name{
+          input{
+            width: 364px;
+            height: 50px;
+            border: 1px solid #818eea;
+            border: none;
+            border-bottom: 0.5px solid #0d0d0d;
+          }
+        }
+
+        &--name2{
+          display: flex;
+          gap: 20px;
+          input{
+            width: 171px; 
+            height: 50px;            
+            border: none;
+            border-bottom: 0.5px solid #0d0d0d;
+          }
+        }
+      }
+
+    }
+  }
   }
 }
