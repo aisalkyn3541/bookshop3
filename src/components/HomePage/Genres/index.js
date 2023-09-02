@@ -6,6 +6,7 @@ import Logo3 from "../../../img/image 3.png";
 import Logo4 from "../../../img/image 4.png";
 import Logo5 from "../../../img/image 5.png";
 import Logo6 from "../../../img/image 6.png";
+import { NavLink } from "react-router-dom";
 
 const Genres = () => {
   return (
@@ -35,6 +36,7 @@ const Genres = () => {
             </div>
             <div className="herotwo--oheros__divs4">
               <img src={Logo4} alt="" />
+
               <p>Romantic</p>
             </div>
             <div className="herotwo--oheros__divs5">
