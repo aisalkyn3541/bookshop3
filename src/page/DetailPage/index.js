@@ -40,6 +40,7 @@ const BookDetails = () => {
     tempElement.innerHTML = html;
     return tempElement.textContent || tempElement.innerText || "";
   };
+
   return (
     <div id="detailsPage">
       <div className="container">
