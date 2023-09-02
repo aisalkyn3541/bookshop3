@@ -23,27 +23,44 @@
       }
       .active {
         color: blue;
-      &--icons {
-        gap: 10px;
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        .basket {
-          font-size: 24px;
-          color: #000;
+        &--icons {
+          gap: 10px;
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+          .basket {
+            font-size: 24px;
+            color: #000;
+          }
         }
       }
     }
     &--icons {
-      gap: 20px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 20px;
-      font-size: 34px;
-      .basket{
-        font-size: 24px;
-        color: red;
+      &__logo {
+        // margin-right: -18%;
+        margin: -7px -3px;
+        height: 35px;
+        background: #e8e5e5;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+        input {
+          width: 0;
+          height: 35px;
+          border: none;
+          outline: none;
+          background: transparent;
+          margin-left: 10px;
+          transition: 0.5s;
+          color: #807b7b;
+        }
+        &--search {
+          font-size: 18px;
+          margin-left: 5px;
+        }
       }
     }
   }
@@ -58,5 +75,4 @@
       }
     }
   }
-}
 }
