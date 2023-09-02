@@ -4,7 +4,6 @@ import BasketCard from "./BasketCart";
 import "./index.scss";
 import Summary from "./Summary";
 const Basket = () => {
-  window.scrollTo(0, 0);
   const { basket } = useSelector((s) => s);
   return (
     <div id="cart">

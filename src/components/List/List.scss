@@ -60,7 +60,7 @@
       &--block {
         margin-bottom: 64px;
         &--title {
-          margin-top: 10px;
+          margin-top: 5px;
         }
         &--text {
           margin-bottom: 24px;
@@ -116,3 +116,90 @@
     }
   }
 }
+
+// @media (max-width: 1200px) {
+//   #List {
+//     .list {
+//       &--allbook {
+//         h2 {
+//           font-size: 32px;
+//         }
+//         p {
+//           font-size: 18px;
+//         }
+//       }
+//       &--filter {
+//         &--inp {
+//           gap: 20px;
+
+//           &--h5 {
+//           }
+//           input {
+//           }
+//           div {
+//           }
+//         }
+
+//         &--block {
+//           &--title {
+//             font-size: 15px;
+//           }
+//           &--text {
+//             font-size: 20px;
+//           }
+//           &--sort {
+//             &--btn {
+//               width: 155px;
+//               height: 35px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   #kniga {
+//     .kniga {
+//       &--book {
+//         &--df {
+//           img {
+//             margin-top: 48px;
+//             width: 195px;
+//             height: 295px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 1024px) {
+//   #List {
+//   }
+// }
+// @media (max-width: 992px) {
+//   #List {
+//   }
+// }
+// @media (max-width: 768px) {
+//   #List {
+//   }
+// }
+// @media (max-width: 576px) {
+//   #List {
+//   }
+// }
+// @media (max-width: 450px) {
+//   #List {
+//   }
+// }
+// @media (max-width: 400px) {
+//   #List {
+//   }
+// }
+// @media (max-width: 376px) {
+//   #List {
+//   }
+// }
+// @media (max-width: 320px) {
+//   #List {
+//   }
+// }
